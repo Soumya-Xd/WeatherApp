@@ -123,10 +123,10 @@ elif upload_option == "Use Camera":
 st.markdown("</div>", unsafe_allow_html=True)
 
 # Load classifier
-model = load_model('keras_model.h5')
+model = load_model('Models/keras_model.h5')
 
 # Load class names
-with open('labels.txt', 'r') as f:
+with open('Models/labels.txt', 'r') as f:
     class_names = [line.strip().split(' ')[1] for line in f]
 
 # Display image and classify
